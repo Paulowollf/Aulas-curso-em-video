@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <style>
+        
+        *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+.container{
+    text-transform: lowercase;
+    justify-content: center;
+    font-size: 10px;
+}
+h2{
+    text-align: center;
+    border: 1px solid orange;
+    color: white;
+
+}
+header{
+    background-image: linear-gradient(to right,orange,blue 90%);
+    padding: 15px;
+}
+table{
+    margin: auto;
+    border: 2px dashed blue;
+}
+table tr{
+    display: flex;
+    float: left;
+    margin: 15px;
+    
+}
+.link a{
+    margin-left: 50%;
+    margin-right: 20%;
+    display: flex;
+
+}
+
+section img{
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    box-shadow: 1px 2px 10px black;
+}
+iframe{
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+}
+.video ul {
+    margin: 10px;
+    list-style-type: decimal;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+@media screen and (max-width:500px) {
+    
+    iframe{
+        width: 250px;
+        height: 350px;
+        border: 2px solid red;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        float: left;
+        margin: auto;
+    }
+    
+
+    
+h1{
+    background-color: red;
+    color: red;
+}
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsabilidade de Telas</h1>
+        <div class="container">
+            <h2>a Responsabilidade é uma adaptação do site para diferentes tipos de Telas de dispositivos</h2>
+        </div>
+    </header>
+    <table>
+        <tr>
+        <td>Smartphones</td>
+        </tr>
+        <tr>
+         <td>SmartWatchs</td>
+        </tr>
+        <tr>
+            <td>tablets</td>
+        </tr>
+        <tr>
+            <td>monitores</td>
+        </tr>
+        
+       
+        
+    </table>
+    <div class="link">
+        <a href="#">clique aqui para ler um artigo</a>
+    </div>
+    
+    <section>    
+        <img src="https://amuracomunicacao.com/wp-content/uploads/2017/06/Site-responsivo.png" alt="url">
+    </section>
+
+    <article>
+    <p>aqui está alguns videos falando sobre sites responsivel</p>
+    <div class="video">
+        <ul>
+            <li><iframe width="350" height="250" src="https://www.youtube.com/embed/Wtyj7-9eY3s" title="CSS Responsivo: A importância e COMO FAZER." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><iframe width="350" height="250" src="https://www.youtube.com/embed/jEf_zX4fKqU" title="APRENDA TUDO SOBRE MEDIA QUERY - COMO DEIXAR UM SITE RESPONSIVO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><iframe width="350" height="250" src="https://www.youtube.com/embed/SOYZkmTcx8s" title="5 Dicas para criar SITES RESPONSIVOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        </ul>
+    </div>
+    </article>
+
+</body>
+</html>
