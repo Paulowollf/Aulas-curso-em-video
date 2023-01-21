@@ -20,9 +20,11 @@
       html, body{
         min-height: 100vh;
         background-color: antiquewhite;
+        
       }
       
       header{
+        
         background-color: rgb(12, 12, 12);
         color: white;
         text-transform: uppercase;
@@ -44,16 +46,18 @@
         }
 
     section{
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        line-height: 2em;
+        text-shadow: 1px 1px 0px white;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+        line-height: 3em;
         padding-left: 40px;
         font-size: 5vh;
     }
 
     section.image{
-        background-color: white;
+        background-color: rgb(255, 255, 255);
        
+        box-shadow: inset 6px 4px 13px 0px black;
 
     }
     section.image p{
@@ -63,6 +67,7 @@
     }
     section > p {
         padding-bottom: 20%;
+        
     }  
 
     #img01{
@@ -70,6 +75,9 @@
         background-position: center ;
         background-size: cover;
         color: white;
+        background-attachment: fixed;
+       
+
     }
     #img02{
         color: black;
@@ -77,19 +85,19 @@
     }
     section.img03{
         background-image: url(img/poema2.jpg);
-        background-position:  right right;
+        background-position:  center center;
         background-size: cover;
+        background-attachment: fixed;
     }
-    #parf{
-        background-color: rgb(77, 77, 77);
-        display: inline-block;
-    }
-    #parf2{
-        background-color: rgb(77, 77, 77);
-        display: block;
-    }
+   
     
-        
+    #parf{
+       background-color: rgba(58, 57, 57, 0.205);
+       display: inline-block;
+       padding: 5px;
+    }
+
+    
         
       footer{
         background-color: black;
@@ -98,7 +106,7 @@
         padding: 10px;
       }
 
-
+   
 
 </style>
 <body>
@@ -126,7 +134,7 @@
         </p>
     </section>
     
-    <section class="img03">
+    <section class="img03" >
         <p id="parf">
             Apenas brincando, <br>
             Ela é como uma rapadura, <br>
@@ -140,8 +148,8 @@
             mas ela é delicada com as palavras. <br>
         </p>
     
-    
-   
+    </section>
+    <section >
         <p id="parf2">
             Num baile de máscara, <br>
             ela é a única verdadeira, <br>
