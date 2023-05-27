@@ -5,20 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    h1{
+        margin-top: 150px;
+    }
     iframe{
         width: 100%;
         border: 1px solid black;
-        margin-top: 20px
+        margin-top: 50px
     }
+    nav{
+        background-color: grey;
+    }
+
+    nav ul {
+        padding: 15px;
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        color: white;
+        
+
+    }
+     nav ul li  {
+        list-style-type: none;
+        text-transform: uppercase;
+        display: block;
+       
+     }   
+
+     nav ul li a { 
+        color: white;
+        text-decoration: none;
+        display: flex;
+     } 
+
+     #burguer { 
+        display: none;
+        text-align: center;
+        padding-top: 15px;
+
+     }
+
+     @media (max-width:768px) {
+
+        #burguer { 
+            display: block;
+            cursor: pointer;
+        }
+        nav ul.open{
+            left: 0px;
+            transition: ease-in-out 1s;
+            top: 39px;
+        }
+        nav ul{
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+            left: -100%;
+            position: absolute;
+            width: 100%;
+            background-color: grey;
+            align-items: center;
+        }
+        
+     }
+
 </style>
 <body>
-    <ul>
-        <li><a href="alinhamentotab.html" target="frame">Primeira Pagina</a></li>
-        <li><a href ="animaçao.html" target="frame">Segunda Pagina</a></li>
-        <li><a href ="exer001.html" target="frame">Terceira Pagina</a></li>
-    </ul>
+    <nav class="nav">
+        <span class="material-symbols-outlined" id="burguer" onclick="menuShow()">
+            menu
+            </span>
+        <ul class="open">
+            <li><a href="alinhamentotab.html" target="frame">Primeira Pagina</a></li>
+            <li><a href ="animaçao.html" target="frame">Segunda Pagina</a></li>
+            <li><a href ="exer001.html" target="frame">Terceira Pagina</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Testando o uso de um Iframe</h1>
@@ -30,5 +103,21 @@
 
         </p>
     </header>
+
+    <script>
+   function menuShow(){
+      let ul = document.querySelector("nav ul");
+
+if (ul.classList.contains("open")) {
+    ul.classList.remove("open");
+    
+} else {
+    ul.classList.add("open");
+}
+    }
+
+
+
+    </script>
 </body>
 </html>
