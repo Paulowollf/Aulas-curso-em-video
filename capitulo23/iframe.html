@@ -8,7 +8,6 @@
 </head>
 <style>
     #nome{
-        background-color: gray;
         padding: 5px;
         margin: 5px;
     }
@@ -17,10 +16,14 @@
     <h1>Cadastre-se aqui</h1>
     <form action="cadastro.php" method="get">
      <p>
-         nome: 
-         <input type="text" name="nome" id="nome">
-         <input type="submit" value="cadastrar"> 
-        </p>
+<label for="nome"> nome</label>
+         <p><input type="text" name="nome" id="nome"></p>
+            <p><label for="sobrenome">sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" pla>
+            </p>
+            <p><input type="submit" value="enviar"></p>
+        
+         
 
     </form>    
 </body>
