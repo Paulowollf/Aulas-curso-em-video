@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formalario </title>
 </head>
+<style>
+  #inivel{
+    -webkit-appearance: none;
+    background: #30f1ff;
+    outline: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 9px;   
+}
+
+#inivel::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
+}
+</style>
 <body>
     
     <form action="cadastro.php"  method="post" autocomplete="on">
@@ -17,7 +38,9 @@
 
             <p>
                 <label for="inivel"></label>
-                <input type="range" name="nivel" id="inivel" min="1" max="10" value="1" required>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="5" required 
+                oninput="ival.innerHTML = Number (inivel.value)">
+                <output value id="ival">5</output>
             </p>
 
             <p>

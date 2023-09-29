@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  #inum {
+        color: green;
+        justify-content: center;
+        background-color: red;
+        text-align: center;
+        width: 150px;
+        margin: auto;
+        margin-top: 50px;
+        background: red;
+    }
+    form{ 
+        width: 1080px;
+    }
+
+    .bar::-moz-range-progress{
+    background-color: rgb(100, 100, 100);
+}
+
+</style>
 <body>
     
     <form action="cadastro.php" method="post">
@@ -24,6 +44,7 @@
         <div>
             <label for="isoma"> soma:</label>
             <output  id="isoma" name="soma"> 0
+                <input type="reset" value="limpar">
         </div>
 
         </output>
@@ -31,6 +52,36 @@
     </form>
 
 
+    <form action="cadastro.pho" method="get">
+
+        <div>
+            <label for="inum"> numero:</label>
+            <input type="range"  id="inum" name="num" value="5" min="0" max="5"
+            oninput="val.innerHTML = Number (inum.value)" style="color: aqua;">
+            <output id="val">5</output>
+            
+        </div>
+
+
+
+
+    </form>
+
+
+    <form action="cadastro2" method="post">
+
+
+
+        
+
+
+
+
+    </form>
+
+    <script>
+
+    </script>
 
 </body>
 </html>
